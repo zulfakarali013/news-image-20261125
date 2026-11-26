@@ -6,7 +6,7 @@
 
 An entry for the make.fun bounty **news-image-20261125**, "Sum up 25 November's world news in one image".
 
-One 1024×1024 front page covering 53 stories from 11 regions and 23 fields. Every story happened, or was first reported, on Wednesday 25 November 2026. Edition 2 uses bigger type throughout, so headlines and the list still read when the page is shrunk to about 300 px; Edition 3 keeps that type and fits all 53 stories back in with tighter card wording and spacing.
+One 1024×1024 front page covering 52 stories from 11 regions and 23 fields. Every story happened, or was first reported, on Wednesday 25 November 2026. Edition 5 keeps Edition 4's big type (23.5 px lead headlines, 16.5 px panels) and larger drawings, and fits the breadth back in with a tight three-column 11 px list, so the headlines still read when shrunk to about 300 px.
 
 - **3 lead stories** with drawings, a status chip and a "why it matters" line:
   - the US tariff proposal on 14 economies
@@ -23,9 +23,9 @@ One 1024×1024 front page covering 53 stories from 11 regions and 23 fields. Eve
   - Solomon Islands–Australia treaty
   - Savasleyka jets claim
   - Champions League night
-- **40 more stories** in a numbered list, coloured by region.
+- **39 more stories** in a numbered three-column list, coloured by region.
 - **Header**:
-  - region bar and field counts
+  - region bar with story counts
   - a numbers bar
 - **Lower panel**:
   - a "where it happened" map
