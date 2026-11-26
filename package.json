@@ -1,0 +1,9 @@
+{
+  "name": "news-image-20261125",
+  "private": true,
+  "type": "module",
+  "description": "Draws entry.png, Wednesday 25 November 2026 in one picture, for the make.fun bounty news-image-20261125. main.ts itself needs no dependencies.",
+  "scripts": { "render": "node render/build.mjs && base64 -w 0 entry.png > entry.png.b64" },
+  "devDependencies": { "playwright": "*" },
+  "license": "MIT"
+}

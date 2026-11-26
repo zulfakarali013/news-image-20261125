@@ -1,0 +1,4 @@
+node_modules
+out/
+entry.png
+*.muse-github-snapshot-sync.json*
