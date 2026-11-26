@@ -34,8 +34,8 @@ function containers() {
     `<path d="M50 70 L250 70 L236 98 L64 98 Z" fill="${C.ink}"/><rect x="54" y="70" width="192" height="5" fill="${C.red}"/>` +
     boxes.join('') +
     `<rect x="214" y="30" width="26" height="40" fill="#e8e4dc" stroke="${C.ink}"/>` +
-    `<rect x="71" y="29" width="42" height="12" fill="${C.white}"/>${text(92, 38.5, 'EU', 9, C.ink)}` +
-    `<rect x="137" y="29" width="42" height="12" fill="${C.white}"/>${text(158, 38.5, 'CHINA', 9, C.ink)}` +
+    `<rect x="71" y="34" width="42" height="12" fill="${C.white}"/>${text(92, 43.5, 'EU', 9, C.ink)}` +
+    `<rect x="137" y="34" width="42" height="12" fill="${C.white}"/>${text(158, 43.5, 'CHINA', 9, C.ink)}` +
     `<g transform="rotate(-12 262 52)"><circle cx="262" cy="52" r="25" fill="none" stroke="${C.red}" stroke-width="4"/>${text(262, 47, 'UP TO', 8.5, C.red)}${text(262, 63, '35%', 16, C.red)}</g>`);
 }
 
@@ -48,7 +48,7 @@ function chartdown() {
     `<polygon points="${pts.map((p) => p.join(',')).join(' ')} 215,130 20,130" fill="#b3261e33"/>` +
     `<polyline points="${pts.map((p) => p.join(',')).join(' ')}" fill="none" stroke="#ff5a4f" stroke-width="4"/>` +
     `<rect x="28" y="62" width="36" height="34" rx="4" fill="#26364f" stroke="#8aa0bd"/>${text(46, 84, 'AI', 13, '#ff8f86')}` +
-    tick(26, 'KOSPI', '−6.2%') + tick(46, 'SK HYNIX', '−11%') + tick(66, 'SAMSUNG', '−9.9%') + tick(86, 'NIKKEI', '−2.8%'));
+    tick(34, 'KOSPI', '−6.2%') + tick(55, 'SK HYNIX', '−11%') + tick(76, 'SAMSUNG', '−9.9%'));
 }
 
 // The station in orbit with a capsule docking, flags of the two crews' countries as patches.
@@ -61,9 +61,9 @@ function station() {
     `<rect x="66" y="40" width="50" height="24" fill="#2d4d86" stroke="#9fb5d9"/><rect x="195" y="40" width="55" height="24" fill="#2d4d86" stroke="#9fb5d9"/>` +
     [72, 84, 96, 207, 219, 231].map((x) => `<line x1="${x}" y1="40" x2="${x}" y2="64" stroke="#9fb5d9"/>`).join('') +
     `<path d="M156 98 l-8 -12 h16 z" fill="#c9ced6"/><rect x="149" y="98" width="14" height="14" rx="3" fill="#c9ced6" stroke="#8b939e"/>` +
-    `<rect x="20" y="30" width="30" height="20" fill="#01411c"/><rect x="20" y="30" width="8" height="20" fill="#fff"/><circle cx="40" cy="40" r="5.5" fill="#fff"/><circle cx="42" cy="38.5" r="5" fill="#01411c"/>` +
-    `<rect x="20" y="56" width="30" height="20" fill="#de2910"/><circle cx="27" cy="62" r="2.6" fill="#ffde00"/>` +
-    text(254, 36, 'TIANGONG', 10, '#fff') + text(205, 94, 'SHENZHOU-24', 9, '#fff'));
+    `<rect x="20" y="36" width="30" height="19" fill="#01411c"/><rect x="20" y="36" width="8" height="19" fill="#fff"/><circle cx="40" cy="45.5" r="5.5" fill="#fff"/><circle cx="42" cy="44" r="5" fill="#01411c"/>` +
+    `<rect x="20" y="59" width="30" height="19" fill="#de2910"/><circle cx="27" cy="65" r="2.6" fill="#ffde00"/>` +
+    text(222, 77, 'TIANGONG', 10, '#fff') + text(205, 94, 'SHENZHOU-24', 9, '#fff'));
 }
 
 // A tanker burning on a ring-road flyover.
@@ -101,11 +101,9 @@ function refinery() {
 // An energy bill with old and new annual figures.
 function bill() {
   return svg('#e9eef6',
-    `<rect x="70" y="10" width="160" height="112" rx="4" fill="#fff" stroke="#9aa6b6"/>` +
-    text(150, 36, 'ENERGY BILL · TYPICAL YEAR', 9, C.navy) +
-    `<line x1="84" y1="42" x2="216" y2="42" stroke="#d3d9e2"/>` +
-    text(150, 60, '£1,723', 15, '#8b8f96') + `<line x1="118" y1="55" x2="182" y2="55" stroke="#8b8f96" stroke-width="2"/>` +
-    text(150, 88, '£2,166', 26, C.red) + text(150, 102, 'FROM 1 JANUARY 2027', 8.5, C.ink) +
+    `<rect x="70" y="24" width="160" height="84" rx="4" fill="#fff" stroke="#9aa6b6"/>` +
+    text(150, 56, '£1,723', 17, '#8b8f96') + `<line x1="112" y1="50" x2="188" y2="50" stroke="#8b8f96" stroke-width="2"/>` +
+    text(150, 92, '£2,166', 30, C.red) +
     `<path d="M32 96 L32 50 L22 50 L40 28 L58 50 L48 50 L48 96 Z" fill="${C.red}"/><path d="M252 96 L252 50 L242 50 L260 28 L278 50 L268 50 L268 96 Z" fill="${C.red}"/>`);
 }
 
@@ -166,8 +164,8 @@ function football() {
   return svg('#1d3b23',
     Array.from({ length: 6 }, (_, i) => `<rect x="${i * 50}" y="66" width="25" height="64" fill="#24492b"/>`).join('') +
     `<rect x="10" y="68" width="280" height="36" fill="none" stroke="#e8f0e8" stroke-width="2"/><line x1="150" y1="68" x2="150" y2="104" stroke="#e8f0e8" stroke-width="2"/><circle cx="150" cy="86" r="12" fill="none" stroke="#e8f0e8" stroke-width="2"/>` +
-    `<rect x="70" y="26" width="160" height="38" rx="4" fill="#0e1520" stroke="#42506a"/>` +
-    text(150, 42, 'PSG 2–2 ROMA', 11.5, '#ffd34d') + text(150, 58, 'SPORTING 2–2 MAN UTD', 10, '#ffd34d') +
+    `<rect x="62" y="30" width="176" height="34" rx="4" fill="#0e1520" stroke="#42506a"/>` +
+    text(150, 54, 'PSG 2–2 ROMA', 19, '#ffd34d') +
     `<circle cx="214" cy="94" r="7" fill="#fff" stroke="${C.ink}"/>`);
 }
 

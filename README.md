@@ -6,7 +6,7 @@
 
 An entry for the make.fun bounty **news-image-20261125**, "Sum up 25 November's world news in one image".
 
-One 1024×1024 front page covering 53 stories from 11 regions and 23 fields. Every story happened, or was first reported, on Wednesday 25 November 2026.
+One 1024×1024 front page covering 53 stories from 11 regions and 23 fields. Every story happened, or was first reported, on Wednesday 25 November 2026. Edition 2 uses bigger type throughout, so headlines and the list still read when the page is shrunk to about 300 px; Edition 3 keeps that type and fits all 53 stories back in with tighter card wording and spacing.
 
 - **3 lead stories** with drawings, a status chip and a "why it matters" line:
   - the US tariff proposal on 14 economies
